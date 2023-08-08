@@ -3,6 +3,6 @@
     "email": "FILL_IN",
     "id_card": "FILL_IN",
     "password": "FILL_IN",
-    "court": "c1/c2",
-    "time": "10am/11am/12pm....9pm"
+    "court": "1/2",
+    "time": "11am/12pm/1pm...9pm"
 }
