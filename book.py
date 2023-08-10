@@ -62,7 +62,7 @@ def run(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
     page = context.new_page()
-    with open("test.json", "r") as f:
+    with open("cookies.json", "r") as f:
         cookies = json.loads(f.read())
         context.add_cookies(cookies)
 
