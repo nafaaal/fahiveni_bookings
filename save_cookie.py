@@ -14,7 +14,7 @@ def save_cookie(page, context):
         time.sleep(1)
         page.get_by_placeholder("Username").click()
         time.sleep(1)
-        page.get_by_placeholder("Username").fill(data["name"])
+        page.get_by_placeholder("Username").fill(data["id_card"])
         time.sleep(1)
         page.get_by_placeholder("Username").press("Tab")
         time.sleep(1)
