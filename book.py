@@ -41,7 +41,7 @@ def book(page):
 
         global BOOKED
         while not BOOKED:
-            page.locator("section").filter(has_text=f"Badminton Court 1Date{CURRENT_DATE} Change dates RateMVR 51 / hourPlease select a ti").locator("svg").nth(3).click() #switch to next date
+            page.locator("section").filter(has_text=f"Badminton Court {court_num}Date{CURRENT_DATE} Change dates RateMVR 51 / hourPlease select a ti").locator("svg").nth(3).click() #switch to next date
             time.sleep(0.75) # can make lower but will be buggy if time slot is availible for current day
             if page.get_by_text(TIMES[data["time"]]).is_visible():
                 print("IS VISIBLE")
